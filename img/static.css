@@ -51,3 +51,15 @@ a   /* убрать подчеркивание у ссылок */
 {
     border-top: 5px solid !important;
 }
+
+
+                                    /* Дочерний селектор*/
+
+section .children   /* .children является дочерним элементом селектора section (то есть внутри тега section)*/
+{
+    color: blue;
+}
+
+
+
+
