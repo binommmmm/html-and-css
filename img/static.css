@@ -85,7 +85,58 @@ a[target] /* Если у тега "a" есть атрибут "target"*/
 
 a[href="https://google.com"] /* Если у тега "a" есть атрибут "href" со значением "https://google.com"*/
 {
-    font-family: "Comic Sans MS",;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+a[href*="google.com"] /* Если у тега "a" есть атрибут "href" со значением в котором есть "google.com"*/
+{
+    color: green;
+}
+
+a[href^="https://"] /* Если у тега "a" есть атрибут "href" со значением "https://" в начале строки*/
+{
+    color: green;
+}
+
+
+a[href$=".com"] /* Если у тега "a" есть атрибут "href" со значением ".com" в конце строки*/
+{
+    color: green;
+}
+
+
+a[tag~="web"] /* выделить ссылку "a" у которой значение атрибута "tag" содержит слово "web"*/
+{
+    color: green;
+}
+
+a[data-value|="selectors"]  /* выделить ссылку у которой значение атрибута "data-value" содержит слово "selectors" и*/
+{
+    color: orange;
+}
+
+
+
+
+                                    /* Псевдоклассы */
+
+
+table
+{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Добавить левую границу всем первым ячейкам в строке */
+
+td:first-child,     /* Первый потомок тега td */
+th:first-child      /* Первый потомок тега th */
+{
+    border-left: 1px solid blue;
+    background: blue;
 }
 
 
