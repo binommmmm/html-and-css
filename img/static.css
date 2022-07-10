@@ -1,0 +1,53 @@
+                                    /* Селектор типа */
+
+
+body  /* правило относится к тегу body */
+{
+    font-size: 20px;
+}
+
+
+h1
+{
+    color: red;
+    text-decoration: underline;
+}
+
+
+a   /* убрать подчеркивание у ссылок */
+{
+    text-decoration: none;
+}
+
+
+
+                                /* Селектор класса */
+
+.e_boy  /* класс e_boy , классы могут иметь любые названия*/
+{
+    font-size: 24px;
+}
+
+
+.attribute,
+[class="attribute"]  /* Селектор атрибута, значит что в атрибуте class только значение  attribute*/
+{
+    color: green;
+}
+
+
+[data-id="8"]   /* data атрибуты */
+{
+    color: green;
+}
+
+
+                                   /* Селектор идентификатора */
+
+
+
+#intro,   /* идентификатор всегда должен быть уникальным */
+[id="intro"]
+{
+    border-top: 5px solid !important;
+}
