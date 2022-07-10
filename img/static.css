@@ -139,4 +139,15 @@ th:first-child      /* Первый потомок тега th */
     background: blue;
 }
 
+/* Закруглить правый верхний угол таблицы */
+thead > tr > th:last-child
+{
+    border-top-right-radius: 6px;
+}
+
+/* Подсвечивает оранжевым при наведении мышкой (в данном случае в таблице) */
+tr:hover
+{
+    color: orange;
+}
 
