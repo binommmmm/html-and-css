@@ -151,3 +151,20 @@ tr:hover
     color: orange;
 }
 
+
+:checked
+{
+
+}
+
+
+
+                                    /* Псевдоэлементы */
+
+
+.pseudo_elements h2::first-letter
+{
+    color: red;
+}
+
+
