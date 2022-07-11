@@ -130,6 +130,30 @@ table
     width: 100%;
 }
 
+
+th,
+td
+{
+    padding: 6px 15px;
+}
+
+
+/* Покрасить заголовок таблицы */
+thead th {
+    background: #42444e;
+    color: fff;
+    text-align: left;
+}
+
+/* Добавить границы всем ячейкам */
+td,
+th
+{
+    border-right: 1px solid #c6c9cc;
+    border-bottom: 1px solid #c6c9cc;
+
+}
+
 /* Добавить левую границу всем первым ячейкам в строке */
 
 td:first-child,     /* Первый потомок тега td */
@@ -140,10 +164,21 @@ th:first-child      /* Первый потомок тега th */
 }
 
 /* Закруглить правый верхний угол таблицы */
+
 thead > tr > th:last-child
 {
     border-top-right-radius: 6px;
 }
+
+/* Подкрасить третьего потомка */
+tr:nth-child(3)
+{
+    background: green;
+}
+
+
+
+
 
 /* Подсвечивает оранжевым при наведении мышкой (в данном случае в таблице) */
 tr:hover
