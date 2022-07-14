@@ -134,3 +134,21 @@
     line-height: 19px;   /* высота строки */
     color: #000000
 }
+
+body{
+    margin: 0;    /* отступ */
+}
+
+.header-info
+{
+    color: #FBFBFB;
+
+    font-size: .8rem;    /* 0.8 от основного font-size(15px) */
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 2px;      /* отступ между буквами*/
+    background: #000000;
+    padding: 7px;
+}
+
+
