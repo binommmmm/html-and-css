@@ -135,12 +135,11 @@
     color: #000000
 }
 
-body{
+body {
     margin: 0;    /* отступ */
 }
 
-.header-info
-{
+.header_info {
     color: #FBFBFB;
 
     font-size: .8rem;    /* 0.8 от основного font-size(15px) */
@@ -151,4 +150,134 @@ body{
     padding: 7px;
 }
 
+.header {
+    background: #fff;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    padding: 15px 15px 15px 11px;   /* отступы элементов в header (верх, право, низ, лево) */
+}
 
+
+/* Ссылка на логотип */
+.header_logo_link {
+    display: block;
+}
+
+
+/* Картинка - логотип */
+.header_logo_image {
+    display: block;
+}
+
+
+.header_nav_list {
+    display: flex;
+    height: 100%;
+    margin: 0;  /* отступ */
+    padding: 0;
+    list-style: none;   /* точки списка убрать */
+}
+
+
+.header_nav_link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: .9333rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* буквы большого размера */
+    color: #000000;
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+}
+
+
+/* при наведении курсором на ссылку в header*/
+/* при использовании клавиатуры*/
+
+.header_nav_link:hover,
+.header_nav_link:focus {
+    color: #FF4A32;
+    border-bottom-color: currentColor;
+    outline: none;
+}
+
+
+
+    /* элементы наших ссылок в header */
+.header_nav_list_item:not(:last-child)    /* Либо можно вот так: .header_nav_list_item + .header_nav_list_item*/
+{
+    margin-right: 22px;
+}
+
+.header_links {
+    display: flex;
+}
+
+    /* картинки в header */
+.header_link_img {
+    width: 17px
+
+}
+
+
+.header_link {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+}
+
+
+.header_nav {
+    margin-left: 125px;
+    margin-right: auto;
+}
+
+.header_link:nth-last-child(2) {
+    margin-right: 0;
+}
+
+
+.preamble {
+    display: flex;     /* на всю ширину */
+    flex-direction: column;
+    align-items: center;
+
+    /* добавляем картинку  */
+    background: url('img/firstBanner.jpg');
+    background-size: cover;   /* по размеру контейнера  */
+    background-repeat: no-repeat;   /* не повторяясь  */
+    background-position: center;
+    min-height: 800px;
+}
+
+.preamble_title {
+    margin: 53px 0 14px;
+    font-weight: normal;
+    font-size: 2.9333rem;      /* перевод в rem: 44/15 = 2.9333*/
+    line-height: 1.15;
+}
+
+.preamble_description {
+    margin-bottom: 22px;
+}
+
+
+.preamble_shops {
+    display: flex;
+    gap: 12px;      /* отступ между элементами */
+}
+
+.preamble_shop {
+    flex: 1 0 auto;    /* можно растягиваться */
+    min-width: 201px;
+    background: #FF4A32;
+    border-radius: 35px;
+    line-height: 1.4666;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
