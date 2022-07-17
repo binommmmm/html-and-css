@@ -203,6 +203,7 @@ body {
     color: #FF4A32;
     border-bottom-color: currentColor;
     outline: none;
+
 }
 
 
@@ -280,4 +281,22 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+
+.promo {
+    background-color: #000000;
+    display: flex; /* центрирование */
+    justify-content: center; /* по центру */
+}
+
+
+.promo_wrapper {
+    max-width: 1200px;
+    min-height: 83px;
+    flex: 0 0 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
